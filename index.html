@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐾PetCare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div>
+    <div id="cont">
+      <h1 class="titulo">🐾 AGENDA TU CITA!</h1>
+      <div>
+        <div id="opciones">
+          <div class="card " id="Agregar">
+            <div id="cardAgregar">
+              <div class="subCard">
+                <div class="agendar">
+                  <img class="card-img-top" id="imgAgregar" src="huella.png">
+                  <div>
+                    <b>Tipo:</b>
+                    <select class="tipo">
+                      <option value="select">Seleccione</option>
+                      <option value="perro">Perro</option>
+                      <option value="gato">Gato</option>
+                      <option value="ave">Aves</option>
+                    </select>
+                    <span class="error" id="errorTipo" ></span>
+                  </div>
+                  <h6 class="name"><br><b>Nombre:</b></h6>
+                  <input class="datos NombreMascota">
+                  <span class="error" id="errorNombreMascota" ></span>
+                  
+                </div>
+
+                <div class="inf">
+                  <div class="atributo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png">
+                    <div>
+                      <b>Propietario:</b>
+                      <input class="datos Propietario">
+                      <span class="error" id="errorPropietario" ></span>
+                    </div>
+                  </div>
+
+                  <div class="atributo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/126/126341.png">
+                    <div>
+                      <b>Telefono:</b>
+                      <input class="datos Tlfn" type="number">
+                      <span class="error" id="errorTelefono" ></span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="horario">
+                  <div class="atributo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/661/661512.png">
+                    <div>
+                      <b>Fecha:</b>
+                      <input class="datos Fecha" type="date" onclick="bloquearFecha()">
+                      <span class="error" id="errorFecha" ></span>
+                    </div>
+                  </div>
+
+                  <div class="atributo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3114/3114812.png">
+                    <div>
+                      <b>Hora:</b>
+                      <input class="datos Hora" type="time" min="08:00" max="18:00">
+                      <span class="error" id="errorHora" ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body-agregar">
+                <b>Sintomas:</b>
+                <textarea class="sintomas"></textarea>
+                <span class="error errorSintomas"></span>
+                <div class="btn-config" id="divBtn">
+                  <button class="btn btn-primary" id="btnguardar" onclick="guardar()">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

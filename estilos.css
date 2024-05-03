@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(203, 235, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+body>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Agregar {
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%; 
+    max-width: 700px; 
+    margin: auto;
+    min-height: 300px;
+    transition: transform 0.5s ease;
+    box-sizing: border-box; 
+}
+
+.input-wrapper input {
+    width: calc(100% - 16px); 
+    box-sizing: border-box; 
+    padding: 8px; 
+}
+
+.atributo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.atributo img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    flex: 0 0 auto; /* Evitar que las imágenes se expandan */
+}
+
+.agendar {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    margin: 20px;
+    color: rgb(0, 30, 226);
+    font-size: 2.5em;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#filtrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    padding: 20px;
+}
+
+.card {
+    min-height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    box-shadow: 6px 6px 8px rgb(54, 69, 79);
+    border: 0.2px solid rgb(0, 0, 0);
+    padding: 5px;
+    transition: transform 0.5s ease;
+}
+
+.card.collapsed {
+    transform: scale(0);
+}
+
+.inf,
+.horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px 25px;
+}
+
+.subCard {
+    padding: 10px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.agendar {
+    text-align: center;
+}
+
+.agendar>div {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    color: #dc3545;
+    font-size: .875em;
+    display: none;
+}
+
+#btnguardar {
+    margin: 15px auto 10px auto;
+    display: block;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+#divBtn {
+    padding: 0;
+}
+
+#cont {
+    max-height: 99vh;
+    overflow-y: auto;
+}
+
+
+.inf img,
+.horario img {
+    width: 20px;
+    margin-right: 10px;
+   
+}
+
+
+.sintomas {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+.card-img-top {
+    width: 100px; 
+    height: 100px; 
+}
+.target1 {
+    margin-top: 20px;
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+  .target1 .card-body {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    padding: 1.25rem;
+    position: relative;
+  }
+  
+  .target1 .card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .target1 .card-text {
+    margin-bottom: 0;
+  }
+  
+  .img {
+    width: 10px; 
+    height: auto;
+    transform: scale(0.5); /* Escala la imagen al 50% */
+  }
+  .estado {
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .estado-select {
+    padding: 6px 12px; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    color: #fff; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: .25rem; 
+    cursor: pointer; 
+    margin-right: 10px; 
+  }
+
+  .estado-select:focus {
+    outline: none; 
+  }
+  
+  .estado-select option {
+    color: #000; 
+    background-color: #fff; 
+  }
+  
+  .botones {
+    display: flex; 
+    gap: 10px; 
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
