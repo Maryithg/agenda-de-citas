@@ -1,0 +1,3 @@
+*.txt
+!important.txt
+.vscode/
